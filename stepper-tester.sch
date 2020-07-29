@@ -193,17 +193,6 @@ Text GLabel 4650 2150 0    50   Input ~ 0
 5V
 Text GLabel 7450 1500 1    50   Input ~ 0
 VMOT
-$Comp
-L Timer:NE555 U?
-U 1 1 5F1F1E78
-P 2650 5450
-F 0 "U?" H 2900 6000 50  0000 C CNN
-F 1 "NE555" H 2900 5900 50  0000 C CNN
-F 2 "" H 2650 5450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 2650 5450 50  0001 C CNN
-	1    2650 5450
-	1    0    0    -1  
-$EndComp
 Text GLabel 2650 5050 1    50   Input ~ 0
 5V
 Text GLabel 2100 5700 3    50   Input ~ 0
@@ -416,4 +405,15 @@ Wire Wire Line
 	4500 3200 4500 3150
 Wire Wire Line
 	4500 3150 4650 3150
+$Comp
+L Timer:NE555P U?
+U 1 1 5F2154E9
+P 2650 5450
+F 0 "U?" H 2850 5950 50  0000 C CNN
+F 1 "NE555P" H 2950 5850 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3300 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3500 5050 50  0001 C CNN
+	1    2650 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

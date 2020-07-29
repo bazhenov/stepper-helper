@@ -25,17 +25,6 @@ F 3 "https://www.pololu.com/product/2982" H 7550 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5F1C5BB0
-P 6100 2850
-F 0 "#PWR?" H 6100 2600 50  0001 C CNN
-F 1 "GND" H 6105 2677 50  0000 C CNN
-F 2 "" H 6100 2850 50  0001 C CNN
-F 3 "" H 6100 2850 50  0001 C CNN
-	1    6100 2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Barrel_Jack J?
 U 1 1 5F1CE645
 P 1700 1450
@@ -177,44 +166,31 @@ Wire Wire Line
 Wire Wire Line
 	6950 2050 7050 2050
 NoConn ~ 7050 1850
-NoConn ~ 7050 2250
 NoConn ~ 7050 2650
 NoConn ~ 7050 2750
 NoConn ~ 7050 2850
 $Comp
 L Switch:SW_Push_DPDT SW?
 U 1 1 5F1DCF29
-P 6600 2900
-F 0 "SW?" H 6400 2900 50  0000 C CNN
-F 1 "SW_Push_DPDT" H 6600 2466 50  0001 C CNN
-F 2 "" H 6600 3100 50  0001 C CNN
-F 3 "~" H 6600 3100 50  0001 C CNN
-	1    6600 2900
+P 4850 2450
+F 0 "SW?" H 4650 2450 50  0000 C CNN
+F 1 "SW_Push_DPDT" H 4850 2016 50  0001 C CNN
+F 2 "" H 4850 2650 50  0001 C CNN
+F 3 "~" H 4850 2650 50  0001 C CNN
+	1    4850 2450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6100 2850 6100 2800
-Wire Wire Line
-	6100 2800 6400 2800
-Wire Wire Line
-	6950 2700 6950 2450
-Wire Wire Line
-	6950 2450 7050 2450
-NoConn ~ 6800 3100
-NoConn ~ 6400 3000
-NoConn ~ 6400 3200
+NoConn ~ 5050 2650
+NoConn ~ 4650 2550
+NoConn ~ 4650 2750
 Wire Wire Line
 	2700 1750 2700 1900
 Text GLabel 2700 1850 2    50   Input ~ 0
 5V
 Text GLabel 6950 2000 0    50   Input ~ 0
 5V
-Wire Wire Line
-	6950 2700 6800 2700
-Text GLabel 6250 2600 0    50   Input ~ 0
+Text GLabel 4650 2150 0    50   Input ~ 0
 5V
-Wire Wire Line
-	6250 2600 6400 2600
 Text GLabel 7450 1500 1    50   Input ~ 0
 VMOT
 $Comp
@@ -386,4 +362,58 @@ F 3 "~" H 3400 4800 50  0001 C CNN
 	1    3400 4800
 	0    1    1    0   
 $EndComp
+Text GLabel 7050 2450 0    50   Input ~ 0
+DIR
+Text GLabel 7050 2250 0    50   Input ~ 0
+EN
+$Comp
+L Switch:SW_Push_DPDT SW?
+U 1 1 5F2920CA
+P 4850 3250
+F 0 "SW?" H 4650 3250 50  0000 C CNN
+F 1 "SW_Push_DPDT" H 4850 2816 50  0001 C CNN
+F 2 "" H 4850 3450 50  0001 C CNN
+F 3 "~" H 4850 3450 50  0001 C CNN
+	1    4850 3250
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5050 3450
+NoConn ~ 4650 3350
+NoConn ~ 4650 3550
+Text GLabel 4650 2950 0    50   Input ~ 0
+5V
+Text GLabel 5050 2250 2    50   Input ~ 0
+DIR
+Text GLabel 5050 3050 2    50   Input ~ 0
+EN
+$Comp
+L power:GND #PWR?
+U 1 1 5F1C5BB0
+P 4500 2400
+F 0 "#PWR?" H 4500 2150 50  0001 C CNN
+F 1 "GND" H 4505 2227 50  0000 C CNN
+F 2 "" H 4500 2400 50  0001 C CNN
+F 3 "" H 4500 2400 50  0001 C CNN
+	1    4500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2400 4500 2350
+Wire Wire Line
+	4500 2350 4650 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5F2920C0
+P 4500 3200
+F 0 "#PWR?" H 4500 2950 50  0001 C CNN
+F 1 "GND" H 4505 3027 50  0000 C CNN
+F 2 "" H 4500 3200 50  0001 C CNN
+F 3 "" H 4500 3200 50  0001 C CNN
+	1    4500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3200 4500 3150
+Wire Wire Line
+	4500 3150 4650 3150
 $EndSCHEMATC
