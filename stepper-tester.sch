@@ -86,30 +86,6 @@ F 3 "~" H 8300 2400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7850 2550 8050 2550
-Wire Wire Line
-	8050 2550 8050 2500
-Wire Wire Line
-	8050 2500 8100 2500
-Wire Wire Line
-	7850 2450 8050 2450
-Wire Wire Line
-	8050 2450 8050 2400
-Wire Wire Line
-	8050 2400 8100 2400
-Wire Wire Line
-	7850 2250 8050 2250
-Wire Wire Line
-	8050 2250 8050 2300
-Wire Wire Line
-	8050 2300 8100 2300
-Wire Wire Line
-	7850 2150 8050 2150
-Wire Wire Line
-	8050 2150 8050 2200
-Wire Wire Line
-	8050 2200 8100 2200
-Wire Wire Line
 	7450 1500 7450 1650
 $Comp
 L power:GND #PWR0103
@@ -439,4 +415,28 @@ F 3 "" H 4550 5350 50  0001 C CNN
 	1    4550 5350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7850 2550 8050 2550
+Wire Wire Line
+	8050 2500 8100 2500
+Wire Wire Line
+	8050 2550 8050 2500
+Wire Wire Line
+	8050 2400 8100 2400
+Wire Wire Line
+	8050 2450 8050 2400
+Wire Wire Line
+	7850 2450 8050 2450
+Wire Wire Line
+	7850 2150 7950 2150
+Wire Wire Line
+	7950 2150 7950 2300
+Wire Wire Line
+	7950 2300 8100 2300
+Wire Wire Line
+	7850 2250 8000 2250
+Wire Wire Line
+	8000 2250 8000 2200
+Wire Wire Line
+	8000 2200 8100 2200
 $EndSCHEMATC
