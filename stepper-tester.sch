@@ -364,8 +364,6 @@ F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 3150 1100 50  0001 C C
 	1    3050 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 1350 2600 1350
 $Comp
 L Device:C C3
 U 1 1 5F22DC3C
@@ -439,4 +437,6 @@ Wire Wire Line
 	8000 2250 8000 2200
 Wire Wire Line
 	8000 2200 8100 2200
+Wire Wire Line
+	2000 1350 2600 1350
 $EndSCHEMATC
