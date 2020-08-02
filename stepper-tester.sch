@@ -30,7 +30,7 @@ U 1 1 5F1CE645
 P 1700 1450
 F 0 "J1" H 1757 1775 50  0000 C CNN
 F 1 "Barrel_Jack" H 1757 1684 50  0000 C CNN
-F 2 "" H 1750 1410 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 1750 1410 50  0001 C CNN
 F 3 "~" H 1750 1410 50  0001 C CNN
 	1    1700 1450
 	1    0    0    -1  
@@ -80,7 +80,7 @@ U 1 1 5F1CE36B
 P 8300 2400
 F 0 "J2" H 8272 2328 50  0000 R CNN
 F 1 "Conn_01x04_Male" H 8272 2373 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8300 2400 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8300 2400 50  0001 C CNN
 F 3 "~" H 8300 2400 50  0001 C CNN
 	1    8300 2400
 	-1   0    0    1   
