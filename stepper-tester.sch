@@ -187,54 +187,22 @@ Wire Wire Line
 $Comp
 L Device:R_POT RV2
 U 1 1 5F1FB82A
-P 3600 5000
-F 0 "RV2" H 3850 5200 50  0000 R CNN
-F 1 "50K" H 3850 5100 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3600 5000 50  0001 C CNN
-F 3 "~" H 3600 5000 50  0001 C CNN
-	1    3600 5000
-	1    0    0    -1  
+P 2150 4450
+F 0 "RV2" V 2050 4500 50  0000 R CNN
+F 1 "50K" V 1950 4500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2150 4450 50  0001 C CNN
+F 3 "~" H 2150 4450 50  0001 C CNN
+	1    2150 4450
+	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R1
-U 1 1 5F1FDF15
-P 1500 5050
-F 0 "R1" H 1431 5004 50  0000 R CNN
-F 1 "470K" H 1431 5095 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1430 5050 50  0001 C CNN
-F 3 "~" H 1500 5050 50  0001 C CNN
-	1    1500 5050
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	3150 5250 3600 5250
 Text GLabel 7050 2350 0    50   Input ~ 0
 STEP
-Connection ~ 3600 5250
-Wire Wire Line
-	3600 5250 3850 5250
 Wire Wire Line
 	2100 5250 2150 5250
-Wire Wire Line
-	3750 5000 3800 5000
-Wire Wire Line
-	3600 5150 3600 5200
-Text GLabel 1500 4900 1    50   Input ~ 0
-5V
 Wire Wire Line
 	2100 5700 2100 5650
 Wire Wire Line
 	2100 5650 2150 5650
-Wire Wire Line
-	3600 4850 3600 4800
-Wire Wire Line
-	3800 5000 3800 5200
-Wire Wire Line
-	3800 5200 3600 5200
-Connection ~ 3600 5200
-Wire Wire Line
-	3600 5200 3600 5250
-NoConn ~ 3150 5450
 $Comp
 L power:GND #PWR0106
 U 1 1 5F24F333
@@ -246,8 +214,6 @@ F 3 "" H 2650 5850 50  0001 C CNN
 	1    2650 5850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1500 5200 1500 5250
 Wire Wire Line
 	2100 5250 1500 5250
 Connection ~ 2100 5250
@@ -264,28 +230,21 @@ Wire Notes Line
 	5050 4100 5050 6300
 Text Notes 4600 6200 0    50   ~ 10
 Oscillator
-Text GLabel 3850 5250 2    50   Input ~ 0
-STEP
 Wire Wire Line
 	2100 4800 2100 5250
 Wire Wire Line
 	3200 4800 2100 4800
-Connection ~ 3200 4800
 Wire Wire Line
 	3200 5650 3200 4800
-Wire Wire Line
-	3250 4800 3200 4800
-Wire Wire Line
-	3600 4800 3550 4800
 $Comp
 L Device:R R2
 U 1 1 5F1FC01A
-P 3400 4800
-F 0 "R2" V 3193 4800 50  0000 C CNN
-F 1 "330" V 3284 4800 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 3330 4800 50  0001 C CNN
-F 3 "~" H 3400 4800 50  0001 C CNN
-	1    3400 4800
+P 1750 4450
+F 0 "R2" V 1543 4450 50  0000 C CNN
+F 1 "330" V 1634 4450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1680 4450 50  0001 C CNN
+F 3 "~" H 1750 4450 50  0001 C CNN
+	1    1750 4450
 	0    1    1    0   
 $EndComp
 Text GLabel 7050 2450 0    50   Input ~ 0
@@ -342,17 +301,6 @@ Wire Wire Line
 	4500 3200 4500 3150
 Wire Wire Line
 	4500 3150 4650 3150
-$Comp
-L Timer:NE555P U1
-U 1 1 5F2154E9
-P 2650 5450
-F 0 "U1" H 2850 5950 50  0000 C CNN
-F 1 "NE555P" H 2950 5850 50  0000 C CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3300 5050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3500 5050 50  0001 C CNN
-	1    2650 5450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Regulator_Linear:AMS1117-5.0 U2
 U 1 1 5F228A3F
@@ -439,4 +387,112 @@ Wire Wire Line
 	8000 2200 8100 2200
 Wire Wire Line
 	2000 1350 2600 1350
+$Comp
+L Diode:1N5817 D1
+U 1 1 5F7C5908
+P 3650 5000
+F 0 "D1" V 3750 5150 50  0000 R CNN
+F 1 "1N5817" V 3750 5300 50  0001 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3650 4825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3650 5000 50  0001 C CNN
+	1    3650 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 5250 3250 5250
+$Comp
+L Device:R R1
+U 1 1 5F7CF699
+P 4250 4800
+F 0 "R1" V 4043 4800 50  0000 C CNN
+F 1 "330" V 4134 4800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4180 4800 50  0001 C CNN
+F 3 "~" H 4250 4800 50  0001 C CNN
+	1    4250 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N5817 D2
+U 1 1 5F7D258F
+P 3950 5000
+F 0 "D2" V 4050 5100 50  0000 R CNN
+F 1 "1N5817" V 3905 4920 50  0001 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3950 4825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 3950 5000 50  0001 C CNN
+	1    3950 5000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 4850 3650 4450
+Wire Wire Line
+	3650 5200 3650 5450
+Wire Wire Line
+	3650 5450 3150 5450
+$Comp
+L Timer:NE555P U1
+U 1 1 5F2154E9
+P 2650 5450
+F 0 "U1" H 2850 5950 50  0000 C CNN
+F 1 "NE555P" H 2950 5850 50  0000 C CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 3300 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3500 5050 50  0001 C CNN
+	1    2650 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 5250 2    50   Input ~ 0
+STEP
+Wire Wire Line
+	2150 4300 2150 4250
+Wire Wire Line
+	2150 4250 2350 4250
+Wire Wire Line
+	2350 4250 2350 4450
+Wire Wire Line
+	2350 4450 3650 4450
+Connection ~ 3650 4450
+Wire Wire Line
+	2350 4450 2300 4450
+Connection ~ 2350 4450
+Wire Wire Line
+	2000 4450 1900 4450
+Wire Wire Line
+	1600 4450 1500 4450
+Wire Wire Line
+	3650 4450 3750 4450
+Wire Wire Line
+	3950 4750 3950 4800
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 5F7CA031
+P 3950 4550
+F 0 "Q1" V 4278 4550 50  0000 C CNN
+F 1 "BC547" V 4187 4550 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4150 4475 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3950 4550 50  0001 L CNN
+	1    3950 4550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3650 5200 3950 5200
+Wire Wire Line
+	3950 5200 3950 5150
+Wire Wire Line
+	3650 5200 3650 5150
+Connection ~ 3650 5200
+Text GLabel 4400 4350 1    50   Input ~ 0
+5V
+Wire Wire Line
+	4400 4350 4400 4450
+Wire Wire Line
+	4150 4450 4400 4450
+Connection ~ 4400 4450
+Wire Wire Line
+	4400 4450 4400 4800
+Wire Wire Line
+	4100 4800 3950 4800
+Connection ~ 3950 4800
+Wire Wire Line
+	3950 4800 3950 4850
+Wire Wire Line
+	1500 4450 1500 5250
 $EndSCHEMATC
