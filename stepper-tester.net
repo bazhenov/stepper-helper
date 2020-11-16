@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/bazhenov/Developer/stepper-tester/stepper-tester.sch)
-    (date "2020 November 10, Tuesday 17:15:43")
+    (date "2020 November 10, Tuesday 20:45:47")
     (tool "Eeschema (5.1.8-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -66,7 +66,7 @@
       (tstamp 5F1FB82A))
     (comp (ref R2)
       (value 330)
-      (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical)
+      (footprint Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal)
       (datasheet ~)
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
